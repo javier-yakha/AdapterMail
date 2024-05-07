@@ -3,9 +3,9 @@
 public class AdaptedGoogleMailServer : IMailServer
 {
   private GoogleMailServer googleMailServer;
-  public AdaptedGoogleMailServer(GoogleMailServer googleMailServer)
+  public AdaptedGoogleMailServer()
   {
-    this.googleMailServer = googleMailServer;
+    googleMailServer = new GoogleMailServer();
   }
   public void ConnectAndSendEmail(string emailAddress, string content, string receiverName)
   {

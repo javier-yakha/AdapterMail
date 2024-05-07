@@ -6,7 +6,7 @@ namespace AdapterPattern
   {
     public static void Main(string[] args)
     {
-      IMailServer mailServer = new AdaptedGoogleMailServer(new GoogleMailServer());
+      IMailServer mailServer = new AdaptedGoogleMailServer();
       mailServer.ConnectAndSendEmail("vip@yakha.de", "We are planning to take over the software industry, keep secret.", "Very Important Person");
     }
   }
